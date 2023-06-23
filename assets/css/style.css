@@ -10,9 +10,10 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background-color: #1C1C1C;
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
+  
+  font-family: "Prompt", sans-serif;
+  background: rgba(255, 255, 255);
+  color: #000;
 }
 
 a {
@@ -30,8 +31,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Open Sans", sans-serif;
+h6,
+p {
+  font-family: "Prompt", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -73,6 +75,16 @@ h6 {
 tabs
 --------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------------
+tabs
+--------------------------------------------------------------*/
+
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -129,15 +141,55 @@ tabs
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  
+}
+
+@media (max-wdith: 1025px) {
+  #header .quyen-loi,
+  #header .lien-he {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #header .logo h1 {
+    /* display: none; */
+    font-size: 16px;
+  }
+
+  #header .regist {
+    /* display: none; */
+    position: relative;
+    top: 0px;
+    right: 0px;
+  }
+
+  #header i {
+    position: relative;
+    top: 0;
+    right: 0px;
+  }
 }
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#header .regist {
+  color: #151515;
+}
+
+#header img {
+  width: 36px;
+}
+
+#header i {
+  color:rgb(0, 0, 0);
 }
 
 #header .logo {
-  font-family: "avenida-w01","avenida-w02",fantasy;
+  font-family: "Prompt", sans-serif;
   font-size: 32px;
   margin: 0;
   padding: 0;
@@ -148,7 +200,7 @@ tabs
 }
 
 #header .logo a {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 #header .logo a span {
@@ -215,7 +267,7 @@ tabs
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: rgb(0, 0, 0);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -244,7 +296,7 @@ tabs
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: rgb(46, 46, 46);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -312,7 +364,7 @@ tabs
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1025px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -411,16 +463,17 @@ tabs
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/hoitrai/hoitrai-2.jpg") top center;
-  background-size: cover;
+
+  /* background: url("../img/background-base.jpg") top center; */
+  /* background-size: cover; */
+  /* object-fit: cover; */
+  margin-top: 10px;
   position: relative;
+  width: 100%;
 }
 
 #hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -428,94 +481,29 @@ tabs
   right: 0;
 }
 
-#hero .container {
-  position: relative;
-  padding-top: 74px;
-  text-align: center;
+#hero img {
+  max-width: 100%;
+  height: auto;
 }
 
-#hero h1 {
-  margin: 0;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 64px;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-}
-
-#hero h1 span {
-  color: #3966DF;
-}
-
-#hero h2 {
-  color: rgba(255, 255, 255, 0.9);
-  margin: 10px 0 0 0;
-  font-size: 24px;
-}
-
-#hero .icon-box {
-  padding: 30px 20px;
-  transition: ease-in-out 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  height: 100%;
-  text-align: center;
-}
-
-#hero .icon-box i {
-  font-size: 32px;
-  line-height: 1;
-  color: #3966DF;
-}
-
-#hero .icon-box h3 {
-  font-weight: 700;
-  margin: 10px 0 0 0;
-  padding: 0;
-  line-height: 1;
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#hero .icon-box h3 a {
-  color: #fff;
-  transition: ease-in-out 0.3s;
-}
-
-#hero .icon-box h3 a:hover {
-  color: #3966DF;
-}
-
-#hero .icon-box:hover {
-  border-color: #3966DF;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
+@media (max-width: 767px) {
+  #hero img {
+    max-width: 200%;
   }
 }
 
-@media (max-width: 768px) {
-  #hero {
-    height: auto;
-  }
-
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  #hero h2 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+
+.title {
+  text-align: center;
+  margin-top: 60px;
+}
+
 section {
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   overflow: hidden;
 }
 
@@ -558,6 +546,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  background:rgba(255, 255, 255);
+  color: #000;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;
@@ -625,7 +618,13 @@ section {
 # Features
 --------------------------------------------------------------*/
 .features {
+  /* background: url("../img/background-base.jpg") repeat; */
+  background-position: center center;
+  background-size: cover;
+  background-color: #fff;
+  background: rgba(255, 255, 255);
   padding-top: 20px;
+  color: #000;
 }
 
 .features .icon-box {
@@ -661,12 +660,28 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  background: #fff;
+}
+
+.services ul {
+  list-style-type: none;
+}
+
+.services .section-title h2, 
+.services .container .section-title p{
+  color: #000;
+}
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
   padding: 20px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+}
+
+.services .tab button {
+  font-size: 14px;
 }
 
 .services .icon-box .icon {
@@ -683,7 +698,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
@@ -695,7 +710,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #fff;
+  color: rgb(0, 0, 0);
   transition: ease-in-out 0.3s;
 }
 
@@ -707,17 +722,22 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .services .icon-box:hover {
-  border-color: #fff;
+  border-color: rgb(0, 0, 0);
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
 }
 
 .services .container .section-title p {
-  color: #fff;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+.count-down {
+  /* text-align: center; */
 }
 
 /*--------------------------------------------------------------
@@ -1034,7 +1054,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background: url("../img/hoitrai/background-summer-vector.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1047,7 +1067,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(99, 115, 116, 0.7);
 }
 
 .testimonials .section-header {
@@ -1140,7 +1160,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #1c1c1c;
+  background: #ffffff;
   padding: 60px 0;
   color: #fff;
 }
@@ -1224,7 +1244,7 @@ section {
 }
 
 .team .container .section-title p {
-  color: #fff;
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -1418,6 +1438,7 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 #footer {
   background: black;
   padding: 0 0 30px 0;
@@ -1566,4 +1587,9 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+#footer .img {
+  width: 80px;
+  height: 80px;
 }
