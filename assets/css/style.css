@@ -144,7 +144,7 @@ tabs
   
 }
 
-@media (max-wdith: 1025px) {
+@media (max-width: 1025px) {
   #header .quyen-loi,
   #header .lien-he {
     display: none;
@@ -152,8 +152,8 @@ tabs
 }
 
 @media (max-width: 768px) {
-  #header .logo h1 {
-    /* display: none; */
+  #header .logo a {
+    display: none;
     font-size: 16px;
   }
 
@@ -168,6 +168,7 @@ tabs
     position: relative;
     top: 0;
     right: 0px;
+    color: white;
   }
 }
 
@@ -189,18 +190,18 @@ tabs
 }
 
 #header .logo {
-  font-family: "Prompt", sans-serif;
-  font-size: 32px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 26px;
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #header .logo a {
-  color: rgb(0, 0, 0);
+  color: #4389C5;
 }
 
 #header .logo a span {
@@ -490,7 +491,7 @@ tabs
   #hero img {
     max-width: 200%;
   }
-}
+} 
 
 
 /*--------------------------------------------------------------
@@ -498,8 +499,80 @@ tabs
 --------------------------------------------------------------*/
 
 .title {
+  
+  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
   text-align: center;
   margin-top: 60px;
+}
+
+.title .title-1 {
+  color: #4389C5;
+}
+
+.title h1 {
+  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  /* color: #4389C5; */
+}
+
+.title h3 {
+  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  /* color: #4389C5; */
+}
+
+/* máy tính  */
+@media (min-width: 993px) {
+  .title .chuyen-tau-pad,
+  .title .chuyen-tau-phone {
+    display: none;
+  }
+} 
+
+/* Pad */
+@media (min-width: 681px) and (max-width: 992px) {
+  .title .chuyentau, 
+  .title .chuyen-tau-phone {
+    display: none;
+  }
+
+  #header .logo h1 {
+    display: none;
+  }
+
+  #team .section-title p {
+    font-size: 30px;
+  }
+}
+
+/* Phone */
+@media (max-width: 680px) {
+  .title .chuyentau,
+  .title .chuyen-tau-pad {
+    display: none;
+  }
+  #header .logo h1 {
+    display: none;
+  }
+
+  .title .title-1 {
+    font-size: 22px;
+  }
+
+  .title h1 {
+    font-size: 22px;
+  }
+
+  #team .section-title p {
+    font-size: 22px;
+  }
 }
 
 section {
@@ -618,7 +691,7 @@ section {
 # Features
 --------------------------------------------------------------*/
 .features {
-  /* background: url("../img/background-base.jpg") repeat; */
+
   background-position: center center;
   background-size: cover;
   background-color: #fff;
@@ -634,9 +707,13 @@ section {
 }
 
 .features .icon-box i {
-  font-size: 48px;
+  font-size: 20px;
   float: left;
   color: #3966DF;
+}
+
+.features .icon-box ul {
+  list-style-type: none;
 }
 
 .features .icon-box p {
@@ -738,11 +815,7 @@ section {
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
-.cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
-  background-size: cover;
-  padding: 60px 0;
-}
+
 
 .cta h3 {
   color: #fff;
@@ -1049,7 +1122,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/hoitrai/background-summer-vector.jpg") no-repeat;
+  /* background: url("../img/hoitrai/background-summer-vector.jpg") no-repeat; */
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1434,6 +1507,12 @@ section {
 # Footer
 --------------------------------------------------------------*/
 
+@media (min-width: 1025px) {
+  #footer .smartphone {
+    display: none;
+  }
+}
+
 #footer {
   background: black;
   padding: 0 0 30px 0;
@@ -1456,8 +1535,9 @@ section {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  font-family: "Roboto Slab", sans-serif;
 }
 
 #footer .footer-top .footer-info h3 span {

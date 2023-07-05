@@ -1,0 +1,54 @@
+#count-down {
+  font-size: 20px; 
+}
+#count-down ul {
+    display: block;
+    list-style: none outside none;
+    margin: 0 auto;
+    padding: 0; 
+}
+  #count-down ul:after {
+      clear: both;
+      content: "";
+      display: table; 
+}
+  #count-down li {
+    float: left;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    width: 25%; }
+  #count-down div {
+    background: #ccc;
+    font-size: 1em;
+    line-height: 1em;
+    padding: 1em;
+    position: relative; }
+    #count-down div:after {
+      content: " " attr(data-interval-text);
+      display: inline-block;
+      position: relative; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 580px; }
+
+#count-down {
+  font-size: 50px; }
+  #count-down div {
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 30px 0;
+    padding: .75em .25em; }
+    #count-down div:after {
+      bottom: .1em;
+      font-size: .35em;
+      font-weight: normal;
+      left: 50%;
+      margin-left: -2em;
+      position: absolute;
+      width: 4em; }
+    #count-down div[data-interval-text="day"], #count-down div[data-interval-text="hr"], #count-down div[data-interval-text="min"], #count-down div[data-interval-text="sec"] {
+      background: #28b263; }
