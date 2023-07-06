@@ -144,17 +144,14 @@ tabs
   
 }
 
-@media (max-width: 1025px) {
-  #header .quyen-loi,
-  #header .lien-he {
+@media (max-width: 600px) {
+  #header .logo .logo{
     display: none;
   }
-}
 
-@media (max-width: 768px) {
-  #header .logo a {
-    display: none;
-    font-size: 16px;
+  #header .logo .logo-text {
+    width: 140px;
+    margin-top: 10px;
   }
 
   #header .regist {
@@ -172,6 +169,10 @@ tabs
   }
 }
 
+#team .not-smartphone-ngang {
+  display: none;
+}
+
 #header.header-scrolled,
 #header.header-inner-pages {
   background: rgba(255, 255, 255, 0.9);
@@ -181,8 +182,18 @@ tabs
   color: #151515;
 }
 
+#header .logo-img {
+  position: relative;
+}
+
 #header img {
-  width: 36px;
+  width: 40px;
+}
+
+#header .logo-text {
+  position: relative;
+  width: 173px;
+  height: auto;
 }
 
 #header i {
@@ -191,7 +202,7 @@ tabs
 
 #header .logo {
   font-family: "Roboto Slab", sans-serif;
-  font-size: 26px;
+  /* font-size: 26px; */
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -209,7 +220,7 @@ tabs
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 45px;
 }
 
 /*--------------------------------------------------------------
@@ -465,10 +476,7 @@ tabs
 --------------------------------------------------------------*/
 #hero {
 
-  /* background: url("../img/background-base.jpg") top center; */
-  /* background-size: cover; */
-  /* object-fit: cover; */
-  margin-top: 10px;
+  margin-top: 20px;
   position: relative;
   width: 100%;
 }
@@ -493,7 +501,9 @@ tabs
   }
 } 
 
-
+#hero-carousel {
+  margin-top: 20px;
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -506,9 +516,9 @@ tabs
   margin-top: 60px;
 }
 
-.title .title-1 {
+/* .title .title-1 {
   color: #4389C5;
-}
+} */
 
 .title h1 {
   font-weight: bold;
@@ -543,9 +553,6 @@ tabs
     display: none;
   }
 
-  #header .logo h1 {
-    display: none;
-  }
 
   #team .section-title p {
     font-size: 30px;
@@ -558,7 +565,7 @@ tabs
   .title .chuyen-tau-pad {
     display: none;
   }
-  #header .logo h1 {
+  #header .logo-img {
     display: none;
   }
 
@@ -652,6 +659,15 @@ section {
   margin-bottom: 0;
 }
 
+.about .content .tong-quan {
+  color:rgb(190, 70, 70)
+}
+
+.about img {
+  border-radius: 16px;
+}
+
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -738,6 +754,10 @@ section {
 
 .services ul {
   list-style-type: none;
+}
+
+.services ul .haucan {
+  list-style-type: disc;
 }
 
 .services .section-title h2, 
