@@ -491,7 +491,7 @@ tabs
 }
 
 #hero img {
-  max-width: 100%;
+  max-width: 125%;
   height: auto;
 }
 
@@ -538,12 +538,13 @@ tabs
   /* color: #4389C5; */
 }
 
-/* máy tính  */
+/* desktop  */
 @media (min-width: 993px) {
   .title .chuyen-tau-pad,
   .title .chuyen-tau-phone {
     display: none;
   }
+
 } 
 
 /* Pad */
@@ -665,6 +666,8 @@ section {
 
 .about img {
   border-radius: 16px;
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -1533,6 +1536,20 @@ section {
   }
 }
 
+#footer a img {
+  width: 60px;
+  height: auto;
+}
+
+#footer a .maytinh {
+  width: 200px;
+  height: 150px;
+}
+
+#footer p {
+  font-size: 18px;
+}
+
 #footer {
   background: black;
   padding: 0 0 30px 0;
@@ -1543,7 +1560,7 @@ section {
 #footer .footer-top {
   background: #151515;
   border-bottom: 1px solid #222222;
-  padding: 60px 0 30px 0;
+  padding: 20px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1565,15 +1582,15 @@ section {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Prompt", sans-serif;
   color: #fff;
 }
 
 #footer .footer-top .social-links a {
-  font-size: 18px;
+  font-size: 16px;
   display: inline-block;
   background: #292929;
   color: #fff;
