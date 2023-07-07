@@ -1536,6 +1536,10 @@ section {
   }
 }
 
+#footer .red i {
+  color: red;
+}
+
 #footer a img {
   width: 60px;
   height: auto;
@@ -1622,15 +1626,9 @@ section {
   margin-bottom: 30px;
 }
 
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#footer .footer-top .footer-links ul i {
+#footer .footer-top .icon-1 i {
   padding-right: 2px;
-  color: #3966DF;
+  color: #df3939;
   font-size: 18px;
   line-height: 1;
 }
